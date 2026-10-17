@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="THE BOSS personal encrypted-backup connection: purpose, Google Drive access and privacy information.">
+<title>THE BOSS | Personal encrypted-backup connection</title>
+<style>:root{color-scheme:light;--ink:#183335;--accent:#17675e;--paper:#f6f5f0;--line:#d3ddd7}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}header,main,footer{max-width:880px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}header a{font-weight:650}main{padding-top:48px;padding-bottom:48px}h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.15;letter-spacing:-.03em;margin:0 0 24px}h2{font-size:1.3rem;line-height:1.3;margin:36px 0 12px}p,ul{margin:0 0 20px}a{color:var(--accent);text-underline-offset:.18em}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.eyebrow{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;font-weight:650;margin-bottom:16px}.status{border-left:4px solid var(--accent);padding:16px 20px;background:#e9efea;margin:28px 0}code{font-size:.92em;overflow-wrap:anywhere}footer{border-top:1px solid var(--line);font-size:.9rem}li{margin-bottom:10px}@media(max-width:480px){body{font-size:16px}header,main,footer{padding:20px}main{padding-top:36px}}</style>
+</head>
+<body>
+<header><a href="index.html">THE BOSS</a><nav aria-label="Main navigation"><a href="privacy.html">Privacy policy</a></nav></header>
+<main>
+<p class="eyebrow">Personal backup connection</p>
+<h1>Recovery information for THE BOSS.</h1>
+<p>This site explains a personal Google Drive connection used by the account owner to prepare an encrypted off-site backup of THE BOSS. It provides information about the connection and its data practices. It does not provide a public backup service, sign-in page or access to any backup.</p>
+<div class="status"><strong>Current status:</strong> the connection has been used for read-only account and storage-capacity checks. Backup uploads have not been enabled.</div>
+<h2>What the connection is for</h2>
+<p>The intended use is to store and retrieve encrypted backup repositories in the owner's Google Drive. The desktop tools are rclone, which connects to Drive, and restic, which encrypts backup contents locally before any authorised upload. Recovery would decrypt the backup locally using a separately held repository password.</p>
+<h2>Why Google Drive access is requested</h2>
+<p>The connection requests only <code>https://www.googleapis.com/auth/drive.file</code>. This allows access to files created by, or explicitly made available to, this app. The permission supports creating, reading, updating and deleting those files. It does not grant access to every existing Drive file, Gmail or Google Photos.</p>
+<p>Storage-capacity and account information are used to confirm the intended account and available space. No broader Google permission is requested for this backup connection.</p>
+<h2>Privacy and account control</h2>
+<p>Read the <a href="privacy.html">privacy policy</a> for details about Google data access, encrypted storage, credentials and retention. The owner controls authorisation and any future backup transfers. The public website contains no backup contents, credentials or recovery secrets.</p>
+<h2>Contact</h2>
+<p>For questions about this personal connection, contact <a href="mailto:usergrok203@gmail.com">usergrok203@gmail.com</a>.</p>
+</main>
+<footer>THE BOSS · Personal, non-commercial recovery connection · Updated 17 October 2026</footer>
+</body>
+</html>
